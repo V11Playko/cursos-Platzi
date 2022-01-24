@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="logo.png">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Platzi.jpg">
   <br/>
   Cursos Platzi
   <br>
