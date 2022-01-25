@@ -109,3 +109,5 @@ Se van a mostrar 2 opciones:
 * [Github: Ration](https://github.com/mikermcneil/ration)
 
 - El Readme fue creado por MineiToshio
+
+- La aplicacion original llamada RATION fue creada por Miker Mcneil creador de Sails.js
