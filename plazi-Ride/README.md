@@ -9,3 +9,11 @@ This is an API for Platzi_Ride which is an application for bikers who like to go
 
 - There will be errors in the code (I'll fix that though).
 
+# Commands
+> **Connect mongoDB to backend/mongo_data**
+
+ - mongod --dbpath mongo_data/
+
+ > **Running sails**
+
+ - sails lift
