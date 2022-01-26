@@ -22,7 +22,9 @@ module.exports = {
       });
       const {email, password} = await joi.validate(req.allParams(), schema);
       const hashedPassword = await bcrypt.hash(password, saltRound);
-      const user = await User.create({email, hashedPassword}).fetch();
+      const user = await User.create({
+        email,
+        password: hashedPassword}).fetch();
       return res.ok(user);
     } catch(err){
       if (err.name === 'ValidationError') {
