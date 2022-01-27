@@ -12,6 +12,7 @@
     "bcrypt": "^5.0.1",
     "grunt": "1.0.4",
     "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
     "sails": "^1.5.2",
     "sails-hook-grunt": "^5.0.0",
     "sails-hook-orm": "^4.0.0",
