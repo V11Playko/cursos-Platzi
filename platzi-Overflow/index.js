@@ -11,7 +11,7 @@ async function init() {
     method: "GET",
     path: "/",
     handler: (req, h) => {
-      return "Hola Mundo!";
+      return "Hola Mundoo!";
     },
   });
 
