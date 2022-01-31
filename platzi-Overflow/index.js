@@ -10,8 +10,16 @@ async function init() {
   server.route({
     method: "GET",
     path: "/",
-    handler: (req, h) => {
-      return "Hola Mundoo!";
+    handler: (req, res) => {
+      return res.response(`Hola mundo ...`).code(200);
+    },
+  });
+
+  server.route({
+    method: "GET",
+    path: "/redirect",
+    handler: (req, res) => {
+      return res.redirect(`http://platzi.com`);
     },
   });
 
