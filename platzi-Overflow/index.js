@@ -1,9 +1,10 @@
 "use strict";
 
 const Hapi = require("hapi");
-const handlebars = require("handlebars");
+const handlerbars = require("handlebars");
 const inert = require("inert");
 const path = require("path");
+const routes = require("./routes");
 const vision = require("vision");
 
 const server = Hapi.server({
@@ -23,7 +24,7 @@ async function init() {
 
     server.views({
       engines: {
-        hbs: handlebars,
+        hbs: handlerbars,
       },
       relativeTo: __dirname,
       path: "views",
@@ -31,45 +32,7 @@ async function init() {
       layoutPath: "views",
     });
 
-    server.route({
-      method: "GET",
-      path: "/home",
-      handler: (req, res) => {
-        return res.views("index", {
-          title: "Home",
-        });
-      },
-    });
-
-    server.route({
-      method: "GET",
-      path: "/register",
-      handler: (req, res) => {
-        return res.views("register", {
-          title: "Registro",
-        });
-      },
-    });
-
-    server.route({
-      method: "POST",
-      path: "/create-user",
-      handler: (req, res) => {
-        console.log(req.payload);
-        return "Usuario Creado";
-      },
-    });
-
-    server.route({
-      method: "GET",
-      path: "/{param*}",
-      handler: {
-        directory: {
-          path: ".",
-          index: ["index.html"],
-        },
-      },
-    });
+    server.route(routes);
 
     await server.start();
   } catch (error) {
