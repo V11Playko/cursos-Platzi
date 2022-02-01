@@ -17,6 +17,8 @@
     "standard": "^16.0.4"
   },
   "dependencies": {
-    "hapi": "^18.1.0"
+    "handlebars": "^4.7.7",
+    "hapi": "^18.1.0",
+    "vision": "^5.4.4"
   }
 }
