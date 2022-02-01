@@ -10,15 +10,31 @@ class Users {
   }
 
   async create(data) {
-    console.log(data);
-    // Destructuro el objeto con el payload enviado. Ya que Hapi lo decora con un prototipo null que no es compatible con Firebase
-    const user = {
-      ...data,
-    };
-    console.log(data);
-    user.password = await this.constructor.encrypt(user.password);
-    const newUser = this.collection.push(user);
+    data.password = await this.constructor.encrypt(data.password);
+    const newUser = this.collection.push();
+    newUser.set(data);
+
     return newUser.key;
+  }
+
+  async validateUser(data) {
+    const userQuery = await this.collection
+      .orderByChild("email")
+      .equalTo(data.email)
+      .once("value");
+    const userFound = userQuery.val();
+    if (userFound) {
+      const userId = Object.keys(userFound)[0];
+      const passwdRight = await bcrypt.compare(
+        data.password,
+        userFound[userId].password
+      );
+      const result = passwdRight ? userFound[userId] : false;
+
+      return result;
+    }
+
+    return false;
   }
 
   static async encrypt(passwd) {

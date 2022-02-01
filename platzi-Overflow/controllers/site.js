@@ -12,7 +12,14 @@ function register(req, h) {
   });
 }
 
+function login(req, h) {
+  return h.view("login", {
+    title: "Ingrese",
+  });
+}
+
 module.exports = {
   home: home,
+  login: login,
   register: register,
 };
