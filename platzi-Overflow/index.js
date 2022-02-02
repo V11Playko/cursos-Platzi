@@ -7,7 +7,7 @@ const path = require("path");
 const routes = require("./routes");
 const site = require("./controllers/site");
 const vision = require("vision");
-/* Solucion de error */
+
 const server = Hapi.server({
   port: process.env.PORT || 3000,
   host: "localhost",

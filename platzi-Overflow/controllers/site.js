@@ -42,7 +42,19 @@ function fileNotFound(req, h) {
   return h.continue;
 }
 
+function ask(req, h) {
+  if (!req.state.user) {
+    return h.redirect("/login");
+  }
+
+  return h.view("ask", {
+    title: "Crear pregunta",
+    user: req.state.user,
+  });
+}
+
 module.exports = {
+  ask: ask,
   home: home,
   fileNotFound: fileNotFound,
   login: login,
