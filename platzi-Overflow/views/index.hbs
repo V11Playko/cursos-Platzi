@@ -20,7 +20,11 @@
           <div class="col-2 text-center">
             <a href="/question/{{key}}" class="text-dark">
               <h3>
-                2
+                {{#if question.answers}}
+                  {{answerNumber question.answers}}
+                {{else}}
+                 0
+                {{/if}}
               </h3>
               Respuestas
             </a>
