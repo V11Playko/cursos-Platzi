@@ -1,17 +1,12 @@
 "use strict";
 
 const Hapi = require("hapi");
-const handlerbars = require("handlebars");
+const handlerbars = require("./lib/helpers");
 const inert = require("inert");
 const path = require("path");
 const routes = require("./routes");
 const site = require("./controllers/site");
 const vision = require("vision");
-
-handlerbars.registerHelper("answerNumber", (answers) => {
-  const keys = Object.keys(answers);
-  return keys.length;
-});
 
 const server = Hapi.server({
   port: process.env.PORT || 3000,
