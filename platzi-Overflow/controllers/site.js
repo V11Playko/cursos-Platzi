@@ -29,8 +29,13 @@ function login(req, h) {
   });
 }
 
+function notFound(req, h) {
+  return h.view("404", {}, { layout: "error-layout" }).code(404);
+}
+
 module.exports = {
   home: home,
   login: login,
+  notFound: notFound,
   register: register,
 };
