@@ -1,4 +1,4 @@
-<<div class="container mt-4">
+<div class="container mt-4">
   <div class="card mb-3">
     <div class="card-header">
       <h3>Cree su cuenta</h3>
@@ -32,6 +32,7 @@
                 pattern=".{6,}" required>
             </div>
             <div class="text-center mt-5">
+              <input type="hidden" name="crumb" value={{crumb}} />
               <button type="submit" class="btn btn-primary">Registrarse</button>
             </div>
           </form>
