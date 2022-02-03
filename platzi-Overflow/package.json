@@ -17,11 +17,19 @@
     "standard": "^16.0.4"
   },
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "firebase-admin": "^10.0.2",
-    "handlebars": "^4.7.7",
-    "hapi": "^18.1.0",
-    "joi": "^17.6.0",
-    "vision": "^5.4.4"
+    "bcrypt": "^3.0.1",
+    "blankie": "^4.0.0",
+    "boom": "^7.2.0",
+    "crumb": "^7.1.0",
+    "firebase-admin": "^6.0.0",
+    "good": "^8.1.1",
+    "good-console": "^7.1.0",
+    "handlebars": "^4.0.12",
+    "hapi": "^17.5.5",
+    "hapi-auth-basic": "^5.0.0",
+    "inert": "^5.1.0",
+    "joi": "^13.6.0",
+    "scooter": "^5.0.0",
+    "vision": "^5.4.0"
   }
 }
