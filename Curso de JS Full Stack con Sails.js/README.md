@@ -111,6 +111,3 @@ Se van a mostrar 2 opciones:
 - El Readme fue creado por MineiToshio
 
 - La aplicacion original llamada RATION fue creada por Miker Mcneil creador de Sails.js
-
-
-PRUEBAAAAA
