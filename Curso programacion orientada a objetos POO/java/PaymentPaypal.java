@@ -3,6 +3,6 @@ public class Paypal extends Payment {
 
     public Paypal(Integer id, String email) {
         super(id,);
-        this.email = email;
+        this.email = email; 
     }
 }
