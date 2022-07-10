@@ -19,7 +19,7 @@ class UberVan extends Car {
     }
 
     @Override
-    public void setPassenger(Integer passenger) {
+    public void setPassenger(int passenger) {
         if(passenger == 6){
             this.passenger = passenger;
         }else{

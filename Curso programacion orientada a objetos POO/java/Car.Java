@@ -22,7 +22,7 @@ class Car {
         return passegenger;
     }
 
-    public void setPassenger(Integer passenger) {
+    public void setPassenger(int passenger) {
         if(passenger == 4){
             this.passegenger = passenger;
         }else{
