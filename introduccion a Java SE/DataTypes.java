@@ -13,5 +13,11 @@ public class DataTypes {
         //Para diferenciarlo de Double colocar una F al final
         float nF = 123.456F;
 
+        var salary = 1000; // INT
+        var pension = salary * 0.03; // DOUBLE
+        var totalSalary = salary - pension; // DOUBLE
+
+
+        System.out.println(totalSalary);
     }
 }
