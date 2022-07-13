@@ -4,7 +4,6 @@ public class Functions {
         double y = 3;
         double area = circleArea(y);
         double quality = 500;
-        System.out.println(area);
 
         //Area de un circulo
         //pi * r
@@ -45,13 +44,8 @@ public class Functions {
     {
         //MXN COP
         switch (currency) {
-            case "MXN":
-                quantity = quantity * 0.052;
-                break;
-            case "COP":
-                quantity = quantity * 0.00031;
-                break;
-
+            case "MXN" -> quantity = quantity * 0.052;
+            case "COP" -> quantity = quantity * 0.00031;
         }
         return quantity;
     }
