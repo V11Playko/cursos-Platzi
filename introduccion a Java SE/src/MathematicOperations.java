@@ -4,6 +4,7 @@ public class MathematicOperations {
         //Valores enteros
         int a = 5;
         int b = 10;
+        int y = 3;
 
         //Valores con decimales
         double i = 2.1;
@@ -41,5 +42,17 @@ public class MathematicOperations {
 
         //Devuelve el numero elevado a la potencia de un valor double
         System.out.println(Math.exp(i));
+
+        //Area de un circulo
+        //pi * r2
+        System.out.println(Math.PI * Math.pow(y,2));
+
+        //Area de una esfera
+        //4*PI*r2
+        System.out.println(4 * Math.PI * Math.pow(y,2));
+
+        //Volumen de una esfera
+        //(4/3)*pi * r3
+        System.out.println((4/3) * Math.PI * Math.pow(y,3));
     }
 }

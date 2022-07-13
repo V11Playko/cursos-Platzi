@@ -2,7 +2,7 @@ public class SwitchStatement {
 
     public static void main(String[] args) {
 
-        String colorModeSelected = "Dark";
+        String colorModeSelected = "Light";
 
         switch (colorModeSelected) {
             case "Light":
