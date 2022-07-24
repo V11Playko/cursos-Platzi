@@ -96,4 +96,6 @@ public class Patient {
     public void setBlood(String blood) {
         this.blood = blood;
     }
+
+
 }
