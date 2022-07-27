@@ -1,6 +1,5 @@
 class Main {
-    public static void main(String[] args) {
-        System.out.println("Hola Mundo");
+    public static void main( string[] args) {
         UberX uberX = new UberX("AMQ123", new Account("Andres Herrera", "AND123"), "Chevrolet", "Sonic");
         uberX.setPassenger(4);
         uberX.printDataCar();
@@ -8,5 +7,8 @@ class Main {
         UberVan uberVan = new UberVan("FGH345", new Account("Andres Herrera", "AND123"));
         uberVan.setPassenger(6);
         uberVan.printDataCar();
+    }
+
+    private static class string {
     }
 }
