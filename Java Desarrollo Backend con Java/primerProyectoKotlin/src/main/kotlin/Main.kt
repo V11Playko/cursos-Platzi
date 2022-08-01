@@ -2,30 +2,33 @@
 const val PI = 3.1416
 
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val nombre = "Gera"  //Declaramos una variable y le asignamos un valor
+    //Aqui empieza nuestra estructura de control IF
+    //Tenemos una prueba logica (donde preguntamos si nombre no esta vacia)
+    //Si esto es verdad [IF] entonces vamos a imprimer la cantidad de caracteres que hay en la variable nombre
+    //Si esto no es verdad [else] vamos a imprimir un mensaje de error diciendo que la variable esta vacia
+    if (nombre.isNotEmpty()) {
+        println("El largo de nuestra variable nombre es ${nombre.length}")
+    } else {
+        println("Error, la variable se encuentra vacia")
+    }
 
-    var dinero : Int = 10
-    println(dinero)
-    dinero = 5
-    println(dinero)
+    // Asignación de if
+    var mensaje : String
+    if (nombre.length > 8){
+        mensaje = "Tienes un nombre largo!"
+    } else {
+        mensaje = "Tienes un nombre corto"
+    }
+    println(mensaje)
 
-    // Variable de solo lectura
+    // Asignación de if inmutable
+    val mensajeInmutable = if (nombre.length > 8) "Tienes un nombre largo!" else "Tienes un nombre corto"
+    println(mensajeInmutable)
 
-    val nombre : String = "Maria"
-    println(nombre)
+    // Asignación de variable inmutable con else if
+    val mensajeInmutable2= if (nombre.length > 8) "Tienes un nombre largo!" else if(nombre.isEmpty()) "Este nombre esta vacio :(" else "Tienes un nombre corto"
+    println(mensajeInmutable2)
 
-// Esto daria error :
-// nombre = "Rose"
 
-    val boolean : Boolean = true
-    val numeroLargo : Long = 30000000000000000
-    val double : Double = 2.7182
-    val float : Float = 1.1f
-
-    val primerValor = 20
-    val segundoValor = 10
-//    val tercerValor = primerValor.minus(segundoValor)
-    val tercerValor = primerValor - segundoValor
-
-    println(tercerValor)
 }
