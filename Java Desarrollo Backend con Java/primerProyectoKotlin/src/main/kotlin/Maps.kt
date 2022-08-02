@@ -30,6 +30,7 @@ fun main(args: Array<String>) {
 
     // Eliminar elemento de nuestro Map
     edadDeSuperHeroesMutable.remove("Wolverine")
+    println(edadDeSuperHeroesMutable)
 
     // Para conocer todas las keys de nuestro map .keys
     println(edadDeSuperHeroesMutable.keys)
