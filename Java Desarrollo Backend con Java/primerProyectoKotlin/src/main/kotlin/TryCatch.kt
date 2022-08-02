@@ -1,13 +1,23 @@
 
 fun main(args: Array<String>) {
 
-    println("Practicando operador Elvis")
-    val m: String? = null
-    val l: Int = if (m != null) m.length else -1
-    println(l)
+    // Como lanzar una excepción
+    // throw IllegalStateException("Error!")
 
-    //Con el operador Elvis expresamos
-    // lo mismo que en la línea anterior
-    val c = m?.length ?: -1
-    println(c)
+
+    // Controlando las excepciones
+    try {
+        throw IllegalStateException("Error!")
+    } catch (e: Exception){
+        println("Ha ocurrido un error")
+    } finally{
+        println("Ejecutando código final...")
+    }
+
+    // Try como expresion
+    val primerValor = 10
+    val segundoValor = 0
+    val resultado: Int = try { primerValor / segundoValor } catch ( e: Exception ) { 0 }
+    println(resultado)
+
 }
