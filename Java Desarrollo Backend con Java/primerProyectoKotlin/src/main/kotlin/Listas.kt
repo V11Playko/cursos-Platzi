@@ -47,7 +47,7 @@ fun main(args: Array<String>) {
 
     // Ordenar con Sort
     val numerosSorted = numerosDeLoteria.sorted()
-    println(numerosDeLoteria)
+    println(numerosSorted)
 
     // Ordenar por orden descendiente
     val numerosDeLoteriaDescendiente = numerosDeLoteria.sortedDescending()
