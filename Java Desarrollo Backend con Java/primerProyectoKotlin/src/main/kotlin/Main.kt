@@ -12,6 +12,6 @@ fun main(args: Array<String>) {
         println("Generando numero aleatorio")
         val numeroAleaorio = (0..100).random()
         println("EL numero generado es ${numeroAleaorio}")
-    }while (numeroAleaorio > 50) 
+    }while (numeroAleaorio > 50)
 
 }
