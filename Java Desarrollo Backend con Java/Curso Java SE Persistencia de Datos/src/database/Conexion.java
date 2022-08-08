@@ -18,7 +18,7 @@ public class Conexion {
                     USER,
                     PASSWORD
             );
-            if (connection != null) System.out.println("Conexion exitosa");
+
         } catch(SQLException e) {
             System.out.println(e);
         }
