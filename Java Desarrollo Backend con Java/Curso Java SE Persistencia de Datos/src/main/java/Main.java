@@ -1,4 +1,4 @@
-import ui.Conexion;
+import database.Conexion;
 
 import java.sql.Connection;
 
