@@ -1,5 +1,4 @@
 package com.demo.market.domain;
-
 public class Product {
     private int productId;
     private String name;

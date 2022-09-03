@@ -1,6 +1,5 @@
 package com.demo.market.persistence.entity;
 
-
 import javax.persistence.*;
 
 @Entity
