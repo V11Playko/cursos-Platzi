@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("value = “/auth”, method = RequestMethod.GET")
+@RequestMapping("/auth")
 public class AuthController {
 
     @Autowired

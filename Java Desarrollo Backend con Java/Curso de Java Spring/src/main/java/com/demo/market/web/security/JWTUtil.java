@@ -34,3 +34,4 @@ public class JWTUtil {
         return Jwts.parser().setSigningKey(KEY).parseClaimsJws(token).getBody();
     }
 }
+
