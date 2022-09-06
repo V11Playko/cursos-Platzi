@@ -1,4 +1,4 @@
-package com.fundamentosplatzi.springboot.fundamentos;
+package com.platzi.springboot.fundamentos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

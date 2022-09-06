@@ -1,6 +1,5 @@
-package com.fundamentosplatzi.springboot.fundamentos.component;
+package com.platzi.springboot.fundamentos.component;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component

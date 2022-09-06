@@ -1,6 +1,6 @@
-package com.fundamentosplatzi.springboot.fundamentos;
+package com.platzi.springboot.fundamentos;
 
-import com.fundamentosplatzi.springboot.fundamentos.component.ComponentDependency;
+import com.platzi.springboot.fundamentos.component.ComponentDependency;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
